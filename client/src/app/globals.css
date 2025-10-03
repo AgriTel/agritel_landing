@@ -5,15 +5,19 @@
   --color-primary: #FFFFFF;
   --color-secondary: #0A0A0A;
   --primary-button: #FFFFFF;
-  --primary-secondary: #D0F348;
+  --secondary-button: #D0F348;
 
   --text-primary: #0A0A0A;
-  --text-secondary: rgba(10, 10, 10, 0.2);
+  --text-secondary: rgba(10, 10, 10, 0.6);
+
+
+  --a-font: 16px;
 
   --margin-x: 56px;
 }
 
 
 body{
-  @apply bg-[var(color-primary)];
+  @apply bg-[var(--color-primary)] mt-0;
 }
+
