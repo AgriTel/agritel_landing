@@ -31,7 +31,7 @@ const HeroContent = () => {
             {/* Explore More Link */}
             <a 
                 href='#' 
-                className='no-underline flex text-white gap-2.5 items-center hover:text-gray-400 transition-colors duration-200 w-full sm:w-auto justify-center sm:justify-start'
+                className='no-underline flex text-white gap-2.5 items-center hover:text-gray-400 transition-colors duration-250 w-full sm:w-auto justify-center sm:justify-start'
             >
                 <Mouse size={20} />
                 <span className='text-sm sm:text-base'>Explore more</span>
