@@ -5,6 +5,7 @@ import OurSolutions from '@/components/sections/our-solutions';
 import AgriInfo from '@/components/sections/agri-info';
 import WhyWeBuilt from '@/components/sections/why-we-built';
 import AgricRevolution from '@/components/sections/agric-revolution';
+import Footer from '@/components/sections/footer';
 const Page = () => {
   return (
     <div className=''>
@@ -14,6 +15,7 @@ const Page = () => {
       <AgriInfo />
       <WhyWeBuilt />
       <AgricRevolution />
+      <Footer />
     </div>
   )
 }
