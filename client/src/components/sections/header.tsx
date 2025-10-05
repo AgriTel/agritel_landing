@@ -23,17 +23,17 @@ interface SocialsType {
 
 const routes: RouteType[] = [
     { id: 1, url: '/', name: 'Home' },
-    { id: 2, url: '/services', name: 'Services' },
-    { id: 3, url: '/products', name: 'Products' },
+    { id: 2, url: '/solutions', name: 'Solutions' },
+    { id: 3, url: '/technology', name: 'Technology' },
     { id: 4, url: '/about', name: 'About Us' },
-    { id: 5, url: '/blog', name: 'Blog' },
+    { id: 5, url: '/contact', name: 'Contact' },
 ] 
 
 const socials: SocialsType[] = [
-    { id: 1, url: 'https://www.facebook.com/', name: 'Facebook', icon: faFacebookF },
-    { id: 2, url: 'https://www.twitter.com/', name: 'Twitter', icon: faXTwitter },
-    { id: 3, url: 'https://www.instagram.com/', name: 'Instagram', icon: faInstagram },
-    { id: 4, url: 'https://www.linkedin.com/', name: 'LinkedIn', icon: faLinkedin }
+    { id: 1, url: 'https://www.linkedin.com/in/maurice-elikem-sunuh/', name: 'LinkedIn', icon: faLinkedin },
+    { id: 2, url: 'https://twitter.com/ElikemSunu24267', name: 'Twitter', icon: faXTwitter },
+    { id: 3, url: 'https://www.instagram.com/z.i.n.z.y/', name: 'Instagram', icon: faInstagram },
+    { id: 4, url: 'mailto:aaronnartey110@gmail.com', name: 'Email', icon: faFacebookF }
 ]
 
 const Header = () => {
@@ -72,10 +72,10 @@ const Header = () => {
                         <Link 
                             key={route.id} 
                             href={route.url} 
-                            className='text-[16px] font-normal text-white hover:text-gray-300 transition-colors duration-250 relative group'
+                            className='text-[16px] font-normal text-white hover:text-[var(--text-accent-hover)] transition-colors duration-250 relative group'
                         >
                             {route.name}
-                            <span className='absolute bottom-0 left-0 w-0 h-px bg-gray-300 group-hover:w-full transition-all duration-250'></span>
+                            <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--text-accent-hover)] group-hover:w-full transition-all duration-250'></span>
                         </Link>
                     ))}
                 </nav>
@@ -151,7 +151,7 @@ const Header = () => {
                         <Link 
                             key={route.id} 
                             href={route.url} 
-                            className='text-lg font-normal text-white hover:text-gray-300 py-4 px-2 border-b border-gray-700 hover:bg-gray-400/10 transition-colors duration-250 last:border-b-0'
+                            className='text-lg font-normal text-white hover:text-[var(--text-accent-hover)] py-4 px-2 border-b border-gray-700 hover:bg-gray-400/10 transition-colors duration-250 last:border-b-0'
                             onClick={closeMobileMenu}
                         >
                             {route.name}

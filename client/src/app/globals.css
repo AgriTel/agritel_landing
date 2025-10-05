@@ -4,11 +4,15 @@
 :root{
   --color-primary: #FFFFFF;
   --color-secondary: #0A0A0A;
+  --color-accent: #16a34a;
+  --color-accent-light: #22c55e;
   --primary-button: #FFFFFF;
   --secondary-button: #D0F348;
 
   --text-primary: #0A0A0A;
   --text-secondary: rgba(10, 10, 10, 0.6);
+  --text-accent: #16a34a;
+  --text-accent-hover: #22c55e;
 
 
   --a-font: 16px;
@@ -19,6 +23,10 @@
 
 body{
   @apply bg-[var(--color-primary)] mt-0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 

@@ -17,52 +17,52 @@ interface FooterItems {
 const footerItems: FooterItems[] = [
   {
     id: 1,
-    header: "Product",
+    header: "Solutions",
     links: [
-      { id: 1, name: "Organic Fertilizer", href: "" },
-      { id: 2, name: "Technology Irrigation", href: "" },
-      { id: 3, name: "Agricultural Monitoring", href: "" },
-      { id: 4, name: "Terrace Cultivation", href: "" },
+      { id: 1, name: "Weather Forecasts", href: "/solutions/weather-forecasts" },
+      { id: 2, name: "Pest Predictions", href: "/solutions/pest-predictions" },
+      { id: 3, name: "Fertilizer Timing", href: "/solutions/fertilizer-timing" },
+      { id: 4, name: "AgriTel On-Farm Unit", href: "/solutions/on-farm-unit" },
     ]
   },
   {
     id: 2,
     header: "Company",
     links: [
-      { id: 1, name: "Resources", href: "" },
-      { id: 2, name: "Blog", href: "" },
-      { id: 3, name: "Contact Us", href: "" },
-      { id: 4, name: "How we work", href: "" },
+      { id: 1, name: "About Us", href: "/about" },
+      { id: 2, name: "Our Mission", href: "/mission" },
+      { id: 3, name: "Contact Us", href: "/contact" },
+      { id: 4, name: "Join Waitlist", href: "/waitlist" },
     ]
   },
   {
     id: 3,
-    header: "Services",
+    header: "Technology",
     links: [
-      { id: 1, name: "Soil Analysis", href: "" },
-      { id: 2, name: "Crop Management", href: "" },
-      { id: 3, name: "Pest Control", href: "" },
-      { id: 4, name: "Sustainability Practices", href: "" },
+      { id: 1, name: "IoT Sensors", href: "/technology/iot" },
+      { id: 2, name: "AI Analytics", href: "/technology/ai" },
+      { id: 3, name: "Weather Data", href: "/technology/weather" },
+      { id: 4, name: "AgriPod Prototype", href: "/technology/agripod" },
     ]
   },
   {
     id: 4,
-    header: "Innovations",
+    header: "Resources",
     links: [
-      { id: 1, name: "Precision Farming", href: "" },
-      { id: 2, name: "Vertical Farming", href: "" },
-      { id: 3, name: "Climate-Smart Agriculture", href: "" },
-      { id: 4, name: "Agroecology", href: "" },
+      { id: 1, name: "Farmer Guides", href: "/resources/guides" },
+      { id: 2, name: "Climate-Smart Tips", href: "/resources/climate-smart" },
+      { id: 3, name: "Sustainability Practices", href: "/resources/sustainability" },
+      { id: 4, name: "Knowledge Base", href: "/resources/knowledge" },
     ]
   },
   {
     id: 5,
-    header: "Success Stories",
+    header: "Community",
     links: [
-      { id: 1, name: "Testimonial", href: "" },
-      { id: 2, name: "Case Studies", href: "" },
-      { id: 3, name: "Customer Reports", href: "" },
-      { id: 4, name: "Impact Assessments", href: "" },
+      { id: 1, name: "Farmer Network", href: "/community/farmers" },
+      { id: 2, name: "NGO Partners", href: "/community/ngos" },
+      { id: 3, name: "Success Stories", href: "/community/stories" },
+      { id: 4, name: "Impact Reports", href: "/community/impact" },
     ]
   }
 ]
@@ -88,7 +88,7 @@ const FooterContent = () => {
             <p className='text-xl sm:text-2xl lg:text-3xl font-semibold ml-3'>AgriTel</p>
           </div>
           <p className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] max-w-sm leading-relaxed'>
-            Revolutionizing agriculture through innovative technology and sustainable practices for a better tomorrow.
+            Insight-driven agriculture for a sustainable tomorrow. Empowering smallholder farmers through IoT, AI, and meteorological innovation.
           </p>
         </div>
 
@@ -104,11 +104,11 @@ const FooterContent = () => {
                   <Link
                     key={link.id}
                     href={link.href}
-                    className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] hover:text-[var(--color-secondary)] transition-colors duration-300 group'
+                    className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] hover:text-[var(--text-accent-hover)] transition-colors duration-300 group'
                   >
                     <span className='relative'>
                       {link.name}
-                      <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--color-secondary)] group-hover:w-full transition-all duration-300 ease-out'></span>
+                      <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--text-accent-hover)] group-hover:w-full transition-all duration-300 ease-out'></span>
                     </span>
                   </Link>
                 ))}
@@ -126,20 +126,20 @@ const FooterContent = () => {
         <div className='flex items-center gap-4 lg:gap-6'>
           <a
             href='#'
-            className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] hover:text-[var(--color-secondary)] transition-colors duration-300 relative group'
+            className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] hover:text-[var(--text-accent-hover)] transition-colors duration-300 relative group'
           >
             <span className='relative'>
               Privacy Policy
-              <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--color-secondary)] group-hover:w-full transition-all duration-300 ease-out'></span>
+              <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--text-accent-hover)] group-hover:w-full transition-all duration-300 ease-out'></span>
             </span>
           </a>
           <a
             href='#'
-            className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] hover:text-[var(--color-secondary)] transition-colors duration-300 relative group'
+            className='font-normal text-xs lg:text-sm text-[var(--text-secondary)] hover:text-[var(--text-accent-hover)] transition-colors duration-300 relative group'
           >
             <span className='relative'>
               Terms of Use
-              <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--color-secondary)] group-hover:w-full transition-all duration-300 ease-out'></span>
+              <span className='absolute bottom-0 left-0 w-0 h-px bg-[var(--text-accent-hover)] group-hover:w-full transition-all duration-300 ease-out'></span>
             </span>
           </a>
         </div>

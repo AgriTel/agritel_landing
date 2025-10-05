@@ -26,18 +26,18 @@ const Button = ({
     const getVariantClasses = (variant: string) => {
         switch (variant) {
             case 'primary':
-                return 'bg-[var(--primary-button)] text-[var(--text-primary)] hover:opacity-80 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50';
+                return 'bg-[var(--color-primary)] text-[var(--text-primary)] hover:bg-gray-50 transition-colors duration-200';
             case 'secondary':
-                return 'bg-[var(--secondary-button)] text-[var(--text-primary)] hover:opacity-80 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50';
+                return 'bg-[var(--color-accent)] text-white hover:bg-[var(--color-accent-light)] transition-colors duration-200';
             case 'tertiary':
-                return 'bg-[var(--tertiary-button)] text-white hover:opacity-90 focus:ring-2 focus:ring-white focus:ring-opacity-50';
+                return 'bg-[var(--color-secondary)] text-white hover:bg-gray-800 transition-colors duration-200';
             default:
-                return 'bg-[var(--primary-button)] text-[var(--text-primary)] hover:opacity-80 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50';
+                return 'bg-[var(--color-primary)] text-[var(--text-primary)] hover:bg-gray-50 transition-colors duration-200';
         }
     }
 
     const getDisabledClasses = () => {
-        return 'opacity-50 cursor-not-allowed hover:opacity-50 active:scale-100';
+        return 'opacity-50 cursor-not-allowed hover:bg-current';
     }
 
     return (
@@ -49,8 +49,7 @@ const Button = ({
                 w-fit rounded-[100px] px-5 py-3 
                 flex items-center justify-center gap-2 
                 font-medium text-[16px] 
-                transition-all duration-200 
-                active:scale-95 disabled:active:scale-100
+                outline-none focus:outline-none
                 ${getVariantClasses(variant)} 
                 ${disabled ? getDisabledClasses() : ''}
                 ${className}
